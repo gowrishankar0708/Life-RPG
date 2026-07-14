@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life RPG — Gamify your daily habits and become 1% better every day. Track XP, streaks, and level up in real life.">
+    <title>Life RPG — Level Up Your Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <h1>🎮 LIFE RPG</h1>
+        <p>Become 1% Better Every Day</p>
+    </header>
+
+    <section class="player-card">
+
+        <div class="avatar">
+            👤
+        </div>
+
+        <div class="player-info">
+
+            <h2 id="level">Level 1</h2>
+
+            <p id="rank">Rank : E</p>
+
+            <div class="xp-bar">
+                <div class="xp-fill"></div>
+            </div>
+
+            <p id="xpText">0 / 100 XP</p>
+
+            <p id="todayXP">⚡ Today's XP : 0</p>
+
+            <p id="streak">🔥 0 Day Streak</p>
+
+            <p id="todayDate">📅 Loading...</p>
+
+        </div>
+
+    </section>
+
+    <section class="stats">
+
+        <div class="card">
+            ❤️
+            <h3>Health</h3>
+            <span id="health">0%</span>
+        </div>
+
+        <div class="card">
+            🧠
+            <h3>Knowledge</h3>
+            <span id="knowledge">0%</span>
+        </div>
+
+        <div class="card">
+            💪
+            <h3>Strength</h3>
+            <span id="strength">0%</span>
+        </div>
+
+        <div class="card">
+            ⚡
+            <h3>Discipline</h3>
+            <span id="discipline">0%</span>
+        </div>
+
+    </section>
+
+    <section class="quests">
+        <h2>⚔️ Today's Quests</h2>
+        <div id="taskList"></div>
+    </section>
+
+    <section class="history">
+        <h2>📜 Daily History</h2>
+        <div id="historyList"></div>
+    </section>
+
+    </div>
+
+<script src="js/tasks.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/rank.js"></script>
+<script src="js/xp.js"></script>
+<script src="js/streak.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
